@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.navbar {
+    background-image: url(../imagenes/fondo.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-nav .nav-link{
+    color: rgb(173, 0, 0);
+    font-weight: 400;
+}
+.imagenlogo {
+    width: 300px;
+    border-radius: 15px;
+   
+}
+
+.navbar-toggler-icon{
+    background-image: url(../iconos/rueda-hamburgueza.webp)
+
+    
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+}
+
+
+
+.nav-link {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contenedor-propaganda {
+    display: flex;
+    justify-content: center;
+    background-color: #000457;
+    align-items: center;
+}
+
+.imagen-propaganda {
+    height: 50vh;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articulos-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;        
+}
+
+.img-de-venta { 
+   height: 250px;
+}
+    
+.section-cubiertas, .section-frenos, .section-servicios{ width: 30%;
+margin: 20px;}  
+
+.section-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    background-color: beige;
+    padding: 25px;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.enviar {
+    margin-top: 15px;
+}
+
+
+
+footer {
+    display: flex;
+    background-color: rgb(145, 143, 151);
+    color: antiquewhite;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+.redes ul{
+    display: flex;
+    
+}
+.redes ul li {
+     list-style: none;
+     margin: 6px 40px;
+
+}
+
+.logo-derechos {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.foto {display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 50px;
+    
+
+}
+/* grid*/
+
+.contenedor-grid {
+
+    display: grid;
+    padding-top: 25px;
+    background-color: rgba(4, 4, 77, 0.405);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 0.7fr); 
+    grid-template-areas: 
+    "prom1 p-1"
+    "prom2 p-2"
+    "prom3 p-3"
+    ". .";
+
+}
+
+.promo1 {
+    grid-area: prom1;
+       
+}
+
+.promo2 {
+    grid-area: prom2;
+}
+
+.promo3 {
+    grid-area: prom3;
+}
+
+.parrafo-promo1 {
+    grid-area: p-1;
+}
+
+.parrafo-promo2 {
+    grid-area: p-2;
+}
+.parrafo-promo3 {
+    grid-area: p-3;
+}
+
+.promo1, .promo2, .promo3, 
+.parrafo-promo1, .parrafo-promo2, .parrafo-promo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+    
+}
+
+/* brakepoint*/
+
+@media (width < 768px){
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 0.25fr);
+        grid-template-areas:
+        "prom1"
+        "p-1"
+        "prom2"
+        "p-2"
+        "prom3"
+        "p-3"
+        "."
+        "."; 
+    
+}
+    .parrafo-promo1, .parrafo-promo2, .parrafo-promo3{
+        padding: 15px;
+
+      
+            
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+
+
+
